@@ -14,22 +14,16 @@
 
 .nav-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 16px 24px;
   position: relative;
 }
 
-/* Hamburger: push to right edge */
+/* Hamburger: hidden by default, shown on mobile via media query */
 .menu-toggle {
-  display: none; /* hidden on desktop */
-  margin-left: auto;
-}
-
-/* ==================== Mobile Menu Toggle Button ==================== */
-.menu-toggle {
-  display: none; /* hidden on desktop */
+  display: none;
   margin-left: auto;
   position: relative;
   z-index: 160;
@@ -113,14 +107,14 @@
   background: var(--accent);
 }
 
-/* Logo images - keep above */
+/* Logo images */
 .logo img {
   display: block;
   height: 50px;
   width: auto;
 }
 
-/* Logo visibility with higher specificity */
+/* Logo visibility — mobile default, desktop override in media query */
 .logo .logo-mobile {
   display: block;
 }
@@ -139,63 +133,131 @@
   }
 }
 
-/* Close button — hidden by default, shown only on mobile (handled by JS) */
+/* Close button — hidden by default, shown only on mobile */
 .menu-close {
   display: none;
 }
 
-.logo-mobile {
-  display: block;
+/* ==================== DESKTOP NAVIGATION (default — above mobile breakpoint) ==================== */
+/* Desktop: nav-links visible as horizontal row */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: static;
+  width: auto;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: none;
+  overflow: visible;
 }
 
-.logo-desktop {
+/* Hide close button on desktop */
+.nav-links .menu-close {
+  display: none !important;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .logo-mobile {
-    display: none;
-  }
-
-  .logo-desktop {
-    display: block;
-  }
+/* Desktop nav links typography */
+.nav-links a {
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
 }
 
-/* Close button — hidden by default, shown only in mobile menu via JS/CSS */
-.menu-close {
-  display: none;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
 }
 
-/* Mobile responsive nav */
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--accent);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  width: 100%;
+}
+
+/* Active state for desktop */
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* CTA button on desktop — distinct style */
+.nav-links .nav-cta {
+  padding: 10px 24px;
+  background: var(--accent);
+  color: var(--text-inverse) !important;
+  border-radius: 40px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.25);
+}
+
+.nav-links .nav-cta:active {
+  transform: translateY(0);
+  background: var(--accent-dark);
+}
+
+/* ==================== Mobile Menu Toggle Button ==================== */
+/* (Hamburger is already styled above — display controlled by media query) */
+
+/* ==================== Mobile Responsive Nav (max-width: 900px) ==================== */
 @media (max-width: 900px) {
-  /* Close button hidden by default, shown only when menu open */
-  .menu-close {
-    display: none;
-  }
-
-  .nav-links.show .menu-close {
-    display: block;
-  }
-
-  /* Hamburger: visible on mobile only */
+  /* Show hamburger on mobile */
   .menu-toggle {
     display: block;
     font-size: 1.6rem;
-    z-index: 160; /* above mobile menu overlay (150) */
+    z-index: 160;
   }
 
-  /* Mobile menu — full screen overlay with slide animation */
+  /* Hide desktop nav on mobile — use overlay instead */
   .nav-links {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     left: auto;
     width: 85vw;
     max-width: 400px;
-    height: 100vh; /* Fallback */
-    height: 100dvh; /* Mobile Safari dynamic viewport */
+    height: 100vh;
+    height: 100dvh;
     background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(12px);
     flex-direction: column;
@@ -284,6 +346,7 @@
 
   /* Close "X" button (positioned top-right) */
   .menu-close {
+    display: none;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -299,6 +362,11 @@
 
   .menu-close:hover {
     color: var(--accent);
+  }
+
+  /* Show close button only when menu is open */
+  .nav-links.show .menu-close {
+    display: block;
   }
 
   /* Typography adjustments for mobile */
