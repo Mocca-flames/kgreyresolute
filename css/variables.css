@@ -1,0 +1,71 @@
+/* ==========================================================================
+   K GREY RESOLUTE — DESIGN TOKENS
+   ========================================================================== */
+
+:root {
+  /* ==================== Backgrounds ==================== */
+  --bg-primary:   #0A0A0A;   /* Near black — main background */
+  --bg-secondary: #111111;   /* Slightly lighter — card backgrounds */
+  --bg-tertiary:  #1A1A1A;   /* Section alternates */
+  --bg-surface:   #222222;   /* Input fields, elevated cards */
+
+  /* ==================== Accent — Gold / Amber ==================== */
+  --accent:         #C9A84C;   /* Primary brand gold */
+  --accent-light:   #E8C46A;   /* Hover states, highlights */
+  --accent-dark:    #A07830;   /* Pressed states */
+  --accent-subtle:  rgba(201, 168, 76, 0.12); /* Ghost/tinted backgrounds */
+
+  /* ==================== Text ==================== */
+  --text-primary:   #F5F5F0;   /* Main body text (warm white) */
+  --text-secondary: #A8A8A0;   /* Subtext, captions */
+  --text-muted:     #666660;   /* Disabled, placeholders */
+  --text-inverse:   #0A0A0A;   /* Text on gold backgrounds */
+
+  /* ==================== Status ==================== */
+  --success:        #3A8C5C;
+  --danger:         #C0392B;   /* Emergency/panic elements */
+  --danger-light:   #E74C3C;
+
+/* ==================== Borders ==================== */
+  --border:         rgba(255, 255, 255, 0.08);  /* Standard divider */
+  --border-accent:  rgba(201, 168, 76, 0.30);  /* Gold accent border */
+
+  /* ==================== Legacy Mapping (for backwards compatibility with index.html old variable names) ==================== */
+  --black:          var(--bg-primary);    /* #0A0A0A */
+  --dark-grey:      var(--bg-secondary);  /* #111111 */
+  --mid-grey:       var(--bg-tertiary);   /* #1A1A1A */
+  --gold:           var(--accent);        /* #C9A84C */
+  --gold-light:     var(--accent-light);  /* #E8C46A */
+  --white:          var(--text-primary);  /* #F5F5F0 */
+  --border-grey:    var(--border);        /* rgba(255,255,255,0.08) */
+
+  /* ==================== Spacing Scale ==================== */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+
+  /* ==================== Breakpoints (for reference) ==================== */
+  --bp-sm:  480px;
+  --bp-md:  768px;
+  --bp-lg:  1024px;
+  --bp-xl:  1280px;
+  --bp-2xl: 1536px;
+
+  /* ==================== Animation Timings ==================== */
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  --ease-out:      cubic-bezier(0.0, 0.0, 0.2, 1.0);
+  --ease-sharp:    cubic-bezier(0.4, 0.0, 0.6, 1.0);
+
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+}

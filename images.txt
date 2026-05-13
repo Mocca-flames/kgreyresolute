@@ -1,0 +1,122 @@
+========================================
+K GREY RESOLUTE — IMAGE SPECIFICATIONS
+========================================
+Purpose: Replace all Font Awesome icons with high-quality photographic images to give the website a professional, alive, and premium feel. No emojis, no icons, no illustrations — use photography or cinematic imagery only.
+
+---
+HERO SECTION
+-----------
+File: images/hero-background.jpg
+Dimensions: 1920x1080px (full-width cover)
+Subject: Professional security personnel in tactical gear, standing alert at dusk/night with city lights in background. Moody lighting, cinematic, high contrast. Conveys vigilance, protection, and professionalism.
+Alternative: Aerial view of a gated estate/commercial complex with security patrol vehicle and armed guards.
+
+---
+SERVICES OVERVIEW ICONS (replace Font Awesome icons)
+-----------------------------------------------------
+Replace each service-card icon with a thumbnail image (150x150px, circle or rounded-square crop).
+
+1. File: images/service-armed-guarding.jpg
+   Service: Armed & Unarmed Guarding
+   Subject: A professional security guard in uniform, standing at attention, visible PSIRA badge, holding a radio, looking alert. Daylight, clear face.
+
+2. File: images/service-vip-protection.jpg
+   Service: VIP Protection
+   Subject: Close protection officer in a suit, walking alongside a business executive in a suit, maintaining situational awareness. Urban setting, professional attire.
+
+3. File: images/service-tactical-response.jpg
+   Service: Tactical Response
+   Subject: Armed rapid response team in tactical gear, exiting a marked response vehicle, ready for action. Dramatic lighting, conveys speed and readiness.
+
+4. File: images/service-cctv-monitoring.jpg
+   Service: CCTV Monitoring
+   Subject: High-tech control room wall with multiple surveillance screens, an operator watching feeds, dim blue lighting atmosphere. Modern, tech-focused.
+
+5. File: images/service-event-security.jpg
+   Service: Event Security
+   Subject: Security personnel managing crowd entrance at a concert or corporate event, wearing reflective vests, checking tickets. Busy but controlled environment.
+
+6. File: images/service-access-control.jpg
+   Service: Access Control
+   Subject: Person using biometric turnstile or RFID card reader at office building entrance. Modern architectural setting, clean lines.
+
+---
+WHY CHOOSE US SECTION (replace check-circle icons)
+--------------------------------------------------
+Use small inline icon images (40x40px) matching section style.
+
+7. File: images/icon-psira.jpg
+   Feature: PSIRA Compliant
+   Subject: Close-up of PSIRA certificate or badge, or a guard holding their PSIRA ID.
+
+8. File: images/icon-247.jpg
+   Feature: 24/7 Operations
+   Subject: Night-time cityscape or a guard post illuminated at night with "24/7" subtly visible.
+
+9. File: images/icon-trained.jpg
+   Feature: Highly Trained Guards
+   Subject: Security personnel in a training scenario, tactical position, or classroom setting with instructor.
+
+10. File: images/icon-response.jpg
+    Feature: Rapid Response Teams
+    Subject: Security vehicle with lights on, parked at a property, officers moving quickly.
+
+11. File: images/icon-equipment.jpg
+    Feature: Modern Security Equipment
+    Subject: Close-up of modern security gear: radio, body cam, flashlight, thermal camera.
+
+12. File: images/icon-professional.jpg
+    Feature: Reliable & Professional
+    Subject: Two guards in crisp uniform shaking hands, teamwork, professional demeanor.
+
+---
+LIVE MONITORING BANNER
+-----------------------
+13. File: images/live-cctv-feed.jpg
+    Dimensions: 1920x300px (banner background, dark overlay compatible)
+    Subject: Realistic CCTV-style surveillance feed showing a parking lot, entrance gate, or corridor grid view with timestamp and grid overlay effect.
+
+---
+TESTIMONIALS SECTION
+--------------------
+14. File: images/testimonial-author-1.jpg
+    Dimensions: 80x80px (circle)
+    Subject: Portrait of a serious business professional (Security Manager), Gauteng — corporate headshot style.
+
+15. File: images/testimonial-author-2.jpg
+    Subject: Portrait of a Facilities Director, Midrand — professional, trustworthy appearance.
+
+16. File: images/testimonial-author-3.jpg
+    Subject: Portrait of an Estate Manager, Centurion — experienced, calm demeanor.
+
+---
+CTA BANNER BACKGROUND
+---------------------
+17. File: images/cta-background.jpg
+    Dimensions: 1920x400px
+    Subject: Professional security team standing together in front of their patrol vehicles at dusk. Conveys readiness and partnership.
+
+---
+FOOTER ELEMENTS
+---------------
+18. File: images/footer-logo.png (optional: if not using text logo)
+    Alternative: Keep text logo; no image needed if typography is preferred.
+
+19. File: images/map-preview.jpg (optional)
+    Dimensions: 400x300px
+    Subject: Satellite or map view of Midrand/Brand Road area with a pin marking the office location.
+
+---
+GENERAL STYLE GUIDELINES
+========================
+- Tone: Professional, serious, trustworthy, modern
+- Color Palette: Dark tones (navy, charcoal, black), gold accents, high contrast
+- People: Realistic, diverse, well-groomed, alert expressions, professional uniforms
+- Atmosphere: Day and night shots to show 24/7 capability, clean, crisp, no cartoonish filters
+- Composition: Centered, well-framed, cinematic lighting where possible
+- File Format: JPEG for photos, PNG if transparency needed
+- Optimize for web: Compress without losing quality (target ~200KB max per image)
+
+========================================
+END OF IMAGES SPECIFICATION
+========================================

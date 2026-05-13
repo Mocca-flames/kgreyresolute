@@ -1,0 +1,158 @@
+/* ==========================================================================
+   K GREY RESOLUTE — LAYOUT & GRID UTILITIES
+   ========================================================================== */
+
+/* ==================== Breakpoints (for reference) ==================== */
+/* Mobile first: --bp-sm: 480px, --bp-md: 768px, --bp-lg: 1024px, --bp-xl: 1280px, --bp-2xl: 1536px */
+
+:root {
+  --max-width: 1280px;
+  --padding-mobile: 24px;
+  --padding-tablet: 48px;
+  --padding-desktop: 80px;
+  --section-py-mobile: 80px;
+  --section-py-desktop: 120px;
+}
+
+/* ==================== Container ==================== */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--padding-mobile);
+  padding-right: var(--padding-mobile);
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--padding-tablet);
+    padding-right: var(--padding-tablet);
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--padding-desktop);
+    padding-right: var(--padding-desktop);
+  }
+}
+
+/* ==================== Full-width Bleed ==================== */
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ==================== Section Spacing ==================== */
+section {
+  padding-top: var(--section-py-mobile);
+  padding-bottom: var(--section-py-mobile);
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: var(--section-py-desktop);
+    padding-bottom: var(--section-py-desktop);
+  }
+}
+
+/* Alternate dark section background */
+
+
+/* ==================== Grid System ==================== */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1023px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ==================== Flex Utilities ==================== */
+.flex           { display: flex; }
+.flex-col       { flex-direction: column; }
+.flex-wrap      { flex-wrap: wrap; }
+.items-center   { align-items: center; }
+.items-start    { align-items: flex-start; }
+.items-end      { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between{ justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+.gap-10{ gap: var(--space-10); }
+.gap-12{ gap: var(--space-12); }
+
+/* ==================== Spacing Helpers ==================== */
+.mt-0  { margin-top: 0; }
+.mt-1  { margin-top: var(--space-1); }
+.mt-2  { margin-top: var(--space-2); }
+.mt-3  { margin-top: var(--space-3); }
+.mt-4  { margin-top: var(--space-4); }
+.mt-6  { margin-top: var(--space-6); }
+.mt-8  { margin-top: var(--space-8); }
+.mt-12 { margin-top: var(--space-12); }
+.mt-16 { margin-top: var(--space-16); }
+.mt-20 { margin-top: var(--space-20); }
+
+.mb-0  { margin-bottom: 0; }
+.mb-1  { margin-bottom: var(--space-1); }
+.mb-2  { margin-bottom: var(--space-2); }
+.mb-3  { margin-bottom: var(--space-3); }
+.mb-4  { margin-bottom: var(--space-4); }
+.mb-6  { margin-bottom: var(--space-6); }
+.mb-8  { margin-bottom: var(--space-8); }
+.mb-12 { margin-bottom: var(--space-12); }
+
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
+.p-1  { padding: var(--space-1); }
+.p-2  { padding: var(--space-2); }
+.p-3  { padding: var(--space-3); }
+.p-4  { padding: var(--space-4); }
+.p-6  { padding: var(--space-6); }
+.p-8  { padding: var(--space-8); }
+.p-12 { padding: var(--space-12); }
+
+/* ==================== Text Alignment ==================== */
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+
+@media (max-width: 767px) {
+  .text-left-mobile   { text-align: left; }
+  .text-center-mobile { text-align: center; }
+  .text-right-mobile  { text-align: right; }
+}
+
+/* ==================== Width/Height ==================== */
+.w-full  { width: 100%; }
+.h-full  { height: 100%; }
+.min-h-screen { min-height: 100vh; }
+
+/* ==================== Center Block ==================== */
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ==================== Position ==================== */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+/* ==================== Overflow ==================== */
+.overflow-hidden { overflow: hidden; }
+.overflow-auto   { overflow: auto; }
