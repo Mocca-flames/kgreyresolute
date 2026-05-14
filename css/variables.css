@@ -60,12 +60,20 @@
   --bp-xl:  1280px;
   --bp-2xl: 1536px;
 
-  /* ==================== Animation Timings ==================== */
-  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1.0);
-  --ease-out:      cubic-bezier(0.0, 0.0, 0.2, 1.0);
-  --ease-sharp:    cubic-bezier(0.4, 0.0, 0.6, 1.0);
+   /* ==================== Animation Timings ==================== */
+   --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+   --ease-out:      cubic-bezier(0.0, 0.0, 0.2, 1.0);
+   --ease-sharp:    cubic-bezier(0.4, 0.0, 0.6, 1.0);
 
-  --duration-fast:   150ms;
-  --duration-normal: 250ms;
-  --duration-slow:   400ms;
+   --duration-fast:   150ms;
+   --duration-normal: 250ms;
+   --duration-slow:   400ms;
+
+   /* ==================== Border Radius ==================== */
+   --radius-sm:   4px;
+   --radius-md:   8px;
+   --radius-lg:  16px;
+   --radius-xl:  24px;
+   --radius-2xl: 28px;
+   --radius-full: 9999px;
 }
