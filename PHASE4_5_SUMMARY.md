@@ -56,7 +56,7 @@
 ### ✅ Content Accuracy
 - All phone numbers: +27 61 582 6087 (tel: and wa.me links)
 - All emails: info@, sales@, ops@, accounts@, careers@ → kgreyresolute.co.za
-- PSIRA: 2998765
+- PSIRA: 4792247
 - Address: Brand Road, Swart Dr, Midrand, 1685
 - Copyright: 2025
 
